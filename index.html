@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="cabeza">
+        <img src="img/Logo.png" class="logo" alt="los de alura">
+    </header>
+    <main>
+        <section class="cuadro1" >
+
+            <textarea id="texto-area" placeholder="Ingresa el texto aqui" onkeyup="this.value=this.value.toLowerCase();" required></textarea>
+          
+            <p id="reglas">Solo letras minúsculas y sin acentos</p>
+
+            <div class="btnEncriptar">
+                <button class="BotonEncriptar" onclick="botonEncriptar(),quitar(), mostrar()">Encriptar</button>
+            </div>
+            <div class="btnDesencriptar">
+                <button class="BotonDesencriptar" onclick="botonDesencriptar(),quitar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="cuadro2" >
+       
+            <textarea id="encriptadoArea"></textarea>
+            <div id="imagen">
+                <img src="img/Muñeco.png" class="mono">
+                <p id="text1">Ningún mensaje fue encontrado</p>
+                <p id="text2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+             <div class="BotonCopiar">
+                <button id="BotonCopiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+       <footer class="pie">
+            <p id="text3"> Creado por: Duran Gomez Miguel Angel 2024</p>
+            <p id="text4"> Para : Oracle Next Education & Alura</p>
+        </footer>
+    <script src="desafio.js"></script>
+</body>
+</html>
