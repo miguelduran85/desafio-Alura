@@ -208,4 +208,18 @@ body{
         display: none;
     }
 }
+@media screen and (max-width:480px){
+    #texto-area{
+        height: 50px;
+    }
+    .imagen{
+        height: 350px;
+    }
+    .pie{
+        width: 100%;
+    }
+    .cuadro2{
+        margin: 5px;
+    }
+}
 
